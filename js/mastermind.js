@@ -3,8 +3,6 @@
 	const NUM_BOLAS = 4;
 	var mastermind=(function(){
 		let combinacion=[];
-		let negras,blancas;
-
 		let init = function(){
 			generaCombinacion();
 			mostrar();
@@ -33,7 +31,7 @@
 					if(copiacombinacion[j]===intento[i] && salir===false){
 						blancas++;
 						copiacombinacion[j]=undefined;
-						salir=true;
+						break;
 					}
 				}
 			}
