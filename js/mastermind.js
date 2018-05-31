@@ -16,7 +16,8 @@
 			let salir;
 			let copiacombinacion=combinacion.slice();
 			//negros(en su sitio)
-			blancas=negras=0; 
+			let blancas=0;
+			let negras=0; 
 			for (let i = 0; i < intento.length; i++) {
 				if(intento[i]===copiacombinacion[i]){
 					negras++; 
